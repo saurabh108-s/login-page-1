@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login & signup</title>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+	<div class="button-box">
+	  <div id="btn"></div>
+	  <button type="button"class="toggle-btn"onclick="login()">login</button>
+	  <button type="button"class="toggle-btn"onclick="register()">register</button>
+	</div>
+	<div class="social">
+	  <img src="fb.png">
+	  <img src="gp.png">
+	  <img src="tw.png">
+	</div>
+	<form id="login" class="input-group">
+ <input type="text" class="input-field" placeholder="User Id" required>
+ <input type="text" class="input-field" placeholder="Password" required>
+ <input type="checkbox" class="checkbox"><span>remember password</span>
+	  <button type="submit"class="submit-btn">login</button>
+	</form>
+
+	<form id="register" class="input-group">
+	  <input type="text" class="input-field" placeholder="User Id" required>
+	  <input type="Email" class="input-field" placeholder="Email Id" required>
+	  <input type="text" class="input-field" placeholder="Password" required>
+	  <input type="checkbox" class="checkbox"><span>i agree to terms & conditions</span>
+	  <button type="submit"class="submit-btn">Register</button>
+	</form>
+      </div>
+      </div>
+  
+     <script>
+   var x = document.getElementById("login");
+   var y = document.getElementById("register");
+   var z = document.getElementById("btn");
+   
+       
+   function register(){
+   x.style.left="-400px";
+  y.style.left="50px";
+  z.style.left="110px";
+  }
+       
+   function login(){
+   x.style.left="50px";
+  y.style.left="400px";
+  z.style.left="0px";
+  }
+     </script>
+     
+  </body>
+  
+  <body>
+    <div class="copyright">
+      <h5>©copyright by saurabh bedre</h5>
+    </div>
+    
+  </body>
+ 
+</html>		
+
